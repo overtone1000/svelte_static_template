@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		%sveltekit.head%
+
+		<!-- This is moved to the main.svelte to allow for toggling -->
+		<!-- SMUI Styles
+		<link rel="stylesheet" href="/smui.css" media="(prefers-color-scheme: light)" />
+		<link rel="stylesheet" href="/smui-dark.css" media="screen and (prefers-color-scheme: dark)"/>
+		-->
+
+		<!-- Roboto, and Roboto Mono fonts 
+			These are used by Svelte MaterialUI. Instead of retrieving them externally, the @fontsource/roboto npm package is included, and the fonts are important and applied globally in the +layout.svelte file and the static "font.css" file.
+		
+		<link rel="stylesheet" href="/font.css" />
+		-->
+
+		<!-- Material Icons fonts 
+		 	Similarly, Material Icons are in the @mdi/js npm package and can be imported in the modules where they are used.
+		-->
+
+		<!-- Can't remember what this is for. -->
+		<style>
+			html {
+				visibility: visible;
+			}
+		</style>
+
+	</head>
+	<body style="margin: 0px" data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
